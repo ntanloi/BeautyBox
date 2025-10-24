@@ -122,8 +122,9 @@ npm run lint             # Lint code
 
 ## 👥 Authors
 
-- **Nguyen Hoang Nguyen Vu** - [iamnguyenvu](https://github.com/iamnguyenvu)
 - **Nguyen Tan Loi** - [ntanloi](https://github.com/ntanloi)
+- **Nguyen Ho Thanh Minh** - [nghothminz@gmail.com](nghothminz@gmail.com)
+- **Nguyen Hoang Nguyen Vu** - [iamnguyenvu](https://github.com/iamnguyenvu)
 
 ## 📄 License
 
