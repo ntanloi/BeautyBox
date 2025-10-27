@@ -123,7 +123,7 @@ npm run lint             # Lint code
 ## 👥 Authors
 
 - **Nguyen Tan Loi** - [ntanloi](https://github.com/ntanloi)
-- **Nguyen Ho Thanh Minh** - [nghothminz@gmail.com](nghothminz@gmail.com)
+- **Nguyen Ho Thanh Minh** - [ThanhMinh2104](https://github.com/ThanhMinh2104)
 - **Nguyen Hoang Nguyen Vu** - [iamnguyenvu](https://github.com/iamnguyenvu)
 
 ## 📄 License
