@@ -1,10 +1,14 @@
-<h1 align="center">BeautyBox 💄</h1>
+<h1 align="center">BeautyBox</h1>
 
-![Java](https://img.shields.io/badge/Java-21-007396?style=flat&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.7-6DB33F?style=flat&logo=spring-boot&logoColor=white)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat&logo=typescript&logoColor=white)
-![License](https://img.shields.io/badge/License-Educational-blue?style=flat)
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-21-007396?style=flat&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring%20Boot-3.5.7-6DB33F?style=flat&logo=spring-boot&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-Educational-blue?style=flat" />
+</p>
+
+
 
 A modern e-commerce platform for cosmetic products built as a team project for university coursework. BeautyBox provides a seamless shopping experience with comprehensive product management and order processing capabilities.
 
