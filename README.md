@@ -1,4 +1,4 @@
-<h1 align="center">BeautyBox</h1>
+<h1 align="center">DHKTPM18C_Nhom08_WebsiteBanMyPhamTrucTuyen</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-21-007396?style=flat&logo=openjdk&logoColor=white" />
