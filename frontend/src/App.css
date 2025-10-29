@@ -7,6 +7,11 @@
     --header-height: 80px;
     --width-page: 1366px;
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 /* Lop */
@@ -20,5 +25,12 @@
   .container {
     width: var(--width-page);
     margin: 0 auto;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE và Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
   }
 }
