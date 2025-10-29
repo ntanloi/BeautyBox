@@ -1,10 +1,12 @@
-import './App.css'
+import './App.css';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <div className='flex-1'>
+    <div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
