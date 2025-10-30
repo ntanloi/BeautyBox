@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Heart } from 'lucide-react';
 import anhProduct1 from '../../assets/images/anhProduct1.png';
 import anhProduct2 from '../../assets/images/anhProduct2.png';
@@ -14,7 +14,6 @@ const ProductCard = ({
   discount = '-3%',
   rating = 5,
   reviewCount = 5,
-  colors = ['#E8B4B8', '#C9A5A0', '#F5D5D5'],
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);

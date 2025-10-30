@@ -3,7 +3,7 @@ import Footer from './components/layout/Footer';
 import HomePage from '../src/pages/HomePage';
 import Header from './components/layout/Header';
 import StoreLocatorPage from './pages/StoreLocatorPage';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import AuthModal from './components/ui/AuthModal';
 
 type Page = 'home' | 'stores';

@@ -255,7 +255,7 @@ export default function StoreLocatorPage() {
                 setCity(e.target.value);
                 setDistrict('');
               }}
-              className="w-1/2 rounded-lg border border-gray-300 bg-transparent px-4 py-2"
+              className="w-1/2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900"
             >
               <option value="">Tỉnh/Thành phố</option>
               {cities.map((c) => (
@@ -268,7 +268,7 @@ export default function StoreLocatorPage() {
             <select
               value={district}
               onChange={(e) => setDistrict(e.target.value)}
-              className="w-1/2 rounded-lg border border-gray-300 bg-transparent px-4 py-2"
+              className="w-1/2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-900"
             >
               <option value="">Quận/huyện</option>
               {districts.map((d) => (
@@ -286,33 +286,31 @@ export default function StoreLocatorPage() {
                 <div
                   key={s.id}
                   onClick={() => setSelected(s)}
-                  className={`cursor-pointer rounded-xl border border-[#2a2a2a] bg-[#111111] p-4 text-white transition hover:border-pink-400 ${
+                  className={`cursor-pointer rounded-xl border border-gray-300 bg-white p-4 text-gray-900 transition hover:border-pink-400 ${
                     selected?.id === s.id ? 'ring-1 ring-pink-400' : ''
                   }`}
                 >
-                  <p className="text-sm opacity-80">{s.city}</p>
-                  <h3 className="font-bold">{s.name}</h3>
-                  <p className="mt-1 text-sm opacity-90">{s.address}</p>
-                  <a className="mt-2 inline-block text-blue-400 underline" href={`tel:${s.phone}`}>
+                  <p className="text-sm text-gray-700">{s.city}</p>
+                  <h3 className="font-semibold text-gray-900">{s.name}</h3>
+                  <p className="mt-1 text-sm text-gray-800">{s.address}</p>
+                  <a className="mt-2 inline-block text-gray-900 underline" href={`tel:${s.phone}`}>
                     {s.phone}
                   </a>
-                  <div className="mt-2 text-sm">
-                    <span className="mr-2 opacity-80">Đang mở cửa 09:00 - 22:00</span>
-                  </div>
+                  <div className="mt-2 text-sm text-gray-700">Đang mở cửa 09:00 - 22:00</div>
                   <div className="mt-2 text-sm">
                     <a
-                      className="mr-4 underline"
+                      className="mr-4 underline text-gray-900"
                       href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name + ' ' + s.address)}`}
                       target="_blank"
                       rel="noreferrer"
                     >
                       Xem bản đồ
                     </a>
-                    <a className="mr-4 underline" href="#">Xem showroom</a>
-                    <a className="underline" href="#">Giờ mở cửa</a>
+                    <a className="mr-4 underline text-gray-900" href="#">Xem showroom</a>
+                    <a className="underline text-gray-900" href="#">Giờ mở cửa</a>
                   </div>
                   <div className="mt-2 text-sm">
-                    <a className="underline" href="#">Chi tiết</a>
+                    <a className="underline text-gray-900" href="#">Chi tiết</a>
                   </div>
                 </div>
               ))}
@@ -321,7 +319,7 @@ export default function StoreLocatorPage() {
         </div>
 
         {/* Right: map */}
-        <div className="min-h-[70vh] overflow-hidden rounded-xl">
+        <div className="min-h-[70vh] overflow-hidden rounded-xl border border-gray-300 bg-gray-50">
           <iframe title="map" src={mapSrc} className="h-full w-full min-h-[60vh]" loading="lazy" />
         </div>
       </div>

@@ -9,7 +9,7 @@ import {
   StoreIcon,
 } from '../../assets/icons/index';
 import MenuItem from '../ui/MenuItem';
-import Navbar from './NavBar';
+import Navbar from './Navbar';
 
 interface HeaderProps {
   onOpenStores?: () => void;
