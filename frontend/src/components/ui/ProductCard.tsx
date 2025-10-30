@@ -57,14 +57,14 @@ const ProductCard = ({
             isHovered ? 'opacity-100' : 'pointer-events-none opacity-0'
           }`}
         >
-          <button className="rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 px-8 py-3 font-semibold text-white transition-shadow hover:shadow-lg">
+          <button className="rounded-full bg-linear-to-r from-yellow-400 to-purple-500 px-8 py-3 font-semibold text-white transition-shadow hover:shadow-lg">
             Xem nhanh
           </button>
         </div>
 
         {freeShip && (
           <div className="absolute bottom-3 left-3">
-            <div className="rounded bg-gradient-to-r from-pink-400 to-pink-300 px-4 py-1 text-sm font-bold text-white">
+            <div className="rounded bg-linear-to-r from-pink-400 to-pink-300 px-4 py-1 text-sm font-bold text-white">
               FREESHIP
             </div>
           </div>
