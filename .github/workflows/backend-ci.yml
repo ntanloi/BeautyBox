@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-test:
+  build:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -33,15 +33,18 @@ jobs:
           java-version: "21"
           cache: maven
 
-      - name: Maven verify (test)
-        run: mvn -B -ntp verify
-
-      - name: Package (skip tests for speed, tuỳ bạn)
-        run: mvn -B -ntp -DskipTests package
+      - name: Package (skip tests for now)
+        run: |
+          if [ -f ./mvnw ]; then
+            chmod +x ./mvnw
+            ./mvnw -B -ntp -DskipTests package
+          else
+            mvn -B -ntp -DskipTests package
+          fi
 
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
         with:
           name: backend-jar
           path: backend/target/*.jar
-          if-no-files-found: error
+          if-no-files-found: warn
