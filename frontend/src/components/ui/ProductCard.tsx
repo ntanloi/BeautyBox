@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Heart } from 'lucide-react';
 import anhProduct1 from '../../assets/images/anhProduct1.png';
 import anhProduct2 from '../../assets/images/anhProduct2.png';
@@ -14,7 +14,6 @@ const ProductCard = ({
   discount = '-3%',
   rating = 5,
   reviewCount = 5,
-  colors = ['#E8B4B8', '#C9A5A0', '#F5D5D5'],
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
@@ -58,14 +57,14 @@ const ProductCard = ({
             isHovered ? 'opacity-100' : 'pointer-events-none opacity-0'
           }`}
         >
-          <button className="rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 px-8 py-3 font-semibold text-white transition-shadow hover:shadow-lg">
+          <button className="rounded-full bg-linear-to-r from-yellow-400 to-purple-500 px-8 py-3 font-semibold text-white transition-shadow hover:shadow-lg">
             Xem nhanh
           </button>
         </div>
 
         {freeShip && (
           <div className="absolute bottom-3 left-3">
-            <div className="rounded bg-gradient-to-r from-pink-400 to-pink-300 px-4 py-1 text-sm font-bold text-white">
+            <div className="rounded bg-linear-to-r from-pink-400 to-pink-300 px-4 py-1 text-sm font-bold text-white">
               FREESHIP
             </div>
           </div>
