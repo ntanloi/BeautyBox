@@ -9,9 +9,14 @@ import {
   StoreIcon,
 } from '../../assets/icons/index';
 import MenuItem from '../ui/MenuItem';
-import Navbar from './NavBar';
+import Navbar from './Navbar';
 
-export default function Header() {
+interface HeaderProps {
+  onOpenStores?: () => void;
+  onOpenLogin?: () => void;
+}
+
+export default function Header({ onOpenStores, onOpenLogin }: HeaderProps) {
   return (
     <header>
       {/* sale */}
@@ -47,7 +52,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Menu Item 1 */}
           <div className="flex items-center justify-between gap-3 border-r px-5">
-            <MenuItem icon={<StoreIcon />} title="Hệ thống cửa hàng" url="#" />
+            <MenuItem icon={<StoreIcon />} title="Hệ thống cửa hàng" onClick={onOpenStores} />
 
             <MenuItem icon={<MagazineIcon />} title="Tạp chí làm đẹp" url="#" />
 
@@ -58,7 +63,7 @@ export default function Header() {
 
           {/* Menu Item 2 */}
           <div className="flex items-center justify-between gap-3 pl-5">
-            <MenuItem icon={<AccountIcon />} title="Đăng nhập" url="#" />
+            <MenuItem icon={<AccountIcon />} title="Đăng nhập" onClick={onOpenLogin} />
 
             <a href="">
               <HeartIcon />

@@ -25,7 +25,7 @@ export default function Footer() {
                 placeholder="Điền email của bạn"
                 className="flex-1 bg-transparent px-6 py-3 text-sm text-white placeholder-white focus:outline-none"
               />
-              <button className="px-8 py-3 font-semibold whitespace-nowrap text-white transition transition-all duration-300 ease-in-out hover:opacity-50">
+              <button className="px-8 py-3 font-semibold whitespace-nowrap text-white transition-all duration-300 ease-in-out hover:opacity-50">
                 THEO DÕI
               </button>
             </div>
